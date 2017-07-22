@@ -1,5 +1,16 @@
-name: Komal Bansal, thinker!
+title: Komal Bansal
+email: "komalbansal1991@gmail.com"
+description: "Thinker"
+baseurl: ""
+url: "https://komalbansal1991.github.io/"
+github_username:  "komalbansal1991"
+linkedin_username: "komal-bansal-778b2b1a"
+
+# Build settings
 markdown: kramdown
 
+sass:
+    style: compressed
+    sass_dir: _sass
 theme: jekyll-theme-minimal
 permalink: /blog/:year/:month/:day/:title

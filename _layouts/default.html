@@ -1,27 +1,20 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+
+    <div class="wrapper">
+	    	<!-- Shown content for each page -->
+		<div class="container content">
 			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:komalbansal1991@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/komalbansal1991</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+		</div>
+
+    <!-- TODO: Move footer out of the below div -->	
+    {% include footer.html %}
+    </div>
+    </body>
+</html>
